@@ -16,7 +16,7 @@
     <!-- Design System -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Font Awesome for Icons (using CDN for simplicity in single file) -->
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Favicon -->
@@ -29,7 +29,7 @@
     <nav class="navbar">
         <div class="container navbar-inner">
             <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="VESTA" style="height: 40px;">
+                <img src="assets/images/logo.png" alt="VESTA">
             </a>
             <a href="#productos" class="btn btn-primary">Ver Tienda</a>
         </div>
@@ -38,10 +38,12 @@
     <!-- Hero Section -->
     <header class="hero bg-aura-vesta">
         <div class="container">
-            <h1>La Llama Eterna</h1>
-            <p>Óleos y sérums botánicos elaborados con procesos lentos y conscientes. Conecta con tu esencia a través de
-                la naturaleza.</p>
-            <a href="#productos" class="btn btn-secondary" style="border:none;">Descubrir Pociones</a>
+            <h1 class="animate-fade-up">La Llama Eterna</h1>
+            <p class="animate-fade-up delay-100">Óleos y sérums botánicos elaborados con procesos lentos y conscientes.
+                Conecta con tu esencia a través de la naturaleza.</p>
+            <div class="animate-fade-up delay-200">
+                <a href="#productos" class="btn btn-secondary hero-btn">Descubrir Pociones</a>
+            </div>
         </div>
     </header>
 
@@ -145,7 +147,7 @@
             </article>
 
             <!-- Serum Nocturno Rose -->
-            <article class="product-card" style="border-color: var(--color-brand-pink);">
+            <article class="product-card featured">
                 <div class="product-image">
                     <img src="assets/images/serum-rose.png" alt="Serum Nocturno Rose">
                 </div>
@@ -160,7 +162,7 @@
                         Hidratación profunda y anti-manchas.</p>
                     <div class="product-price">$33.000</div>
                     <a href="https://wa.me/123456789?text=Hola%20Vesta!%20Me%20interesa%20el%20Serum%20Rose"
-                        target="_blank" class="btn btn-primary" style="width: 100%;">Comprar por WhatsApp</a>
+                        target="_blank" class="btn btn-secondary" style="width: 100%;">Comprar por WhatsApp</a>
                 </div>
             </article>
 
@@ -173,7 +175,7 @@
             <h2 style="color: white; margin-bottom: 16px;">¿Tienes dudas sobre qué poción elegir?</h2>
             <p style="margin-bottom: 32px; color: rgba(255,255,255,0.9);">Escríbenos y te asesoramos para encontrar tu
                 ritual ideal.</p>
-            <a href="https://wa.me/123456789" class="btn btn-secondary" style="border: none;">Consultar ahora</a>
+            <a href="https://wa.me/123456789" class="btn btn-secondary hero-btn">Consultar ahora</a>
         </div>
     </section>
 
@@ -181,25 +183,24 @@
     <footer>
         <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
             <div style="flex: 1; min-width: 200px;">
-                <div class="logo" style="margin-bottom: 16px;">VESTA</div>
-                <p style="color: var(--color-neutral-500); font-size: 14px;">
+                <div class="logo" style="margin-bottom: 16px;">
+                    <img src="assets/images/logo.png" alt="VESTA">
+                </div>
+                <p style="font-size: 14px;">
                     Productos naturales creados con consciencia y amor.
                 </p>
             </div>
 
             <div style="flex: 1; min-width: 200px;">
-                <h4 style="margin-bottom: 16px;">Contacto</h4>
+                <h4 style="margin-bottom: 16px; color: white;">Contacto</h4>
                 <ul style="list-style: none;">
-                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--color-neutral-700);">Instagram</a>
-                    </li>
-                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--color-neutral-700);">WhatsApp</a>
-                    </li>
-                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--color-neutral-700);">Email</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#">Instagram</a></li>
+                    <li style="margin-bottom: 8px;"><a href="https://wa.me/123456789">WhatsApp</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#">Email</a></li>
                 </ul>
             </div>
         </div>
-        <div class="container"
-            style="margin-top: 48px; text-align: center; font-size: 12px; color: var(--color-neutral-500);">
+        <div class="container" style="margin-top: 48px; text-align: center; font-size: 12px;">
             © 2025 Vesta. Todos los derechos reservados.
         </div>
     </footer>
